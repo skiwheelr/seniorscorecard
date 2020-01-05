@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+#### ArchitectUI Bootstrap 4 ReactJS Theme FREE
+#### Made with love by DashboardPack.com
 
-You can use the [editor on GitHub](https://github.com/skiwheelr/seniorscorecard.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## PRO Version Available at - https://dashboardpack.com/theme-details/architectui-dashboard-react-pro
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Installation
+Download and uncompress the theme package archive in your desired folder location.
 
-### Markdown
+Download and install Node.js from nodejs.org/en/download/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Install the latest version of npm. This will be useful when running all the build commands. Run the following in a command line, either your IDE's Terminal window or in a Windows Command Prompt.
 
-```markdown
-Syntax highlighted code block
+                                                            
+    npm install --global npm@latest
+                                                            
+                                                        
+Install the app dependencies by running the following command in the command line inside the folder root where you have unzipped the theme package archive.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+    npm install
+                                                        
+After npm finishes installing the modules from package.json you can go ahead and start the application. To do so, run the command below.
 
-1. Numbered
-2. List
+You can also use yarn to install dependencies instead of npm.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+    npm run start
+                                                        
+After the comand finished, you should see a Compiled successfully! message in your terminal window. Also, a web server service will be started so you can view your app in the browser: http://localhost:3000
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Production Build
 
-### Jekyll Themes
+To create a production optimised build run the command below:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/skiwheelr/seniorscorecard.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+    npm run build
+                                                        
+This created another folder in the root of your project named build. You'll have an option to start a local web server to view your newly created production build.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+    serve -s build -l 4000
+                                                        
+This will start a local web server on port 4000, on which the production folder (/build/) will be available in your browser.
